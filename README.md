@@ -16,7 +16,7 @@ Compute the redshift and recession speed of a star using the hydrogen‑alpha (H
 addpath src scripts
 scripts/demo_redshift
 
-The demo will:
+## The demo will:
 
 Load data/starData.mat if present (expects a matrix spectra of size nObs×nStars).
 

@@ -1,7 +1,7 @@
 # MATLAB Redshift (H‑Alpha)
 
 Compute the redshift and recession speed of a star using the hydrogen‑alpha (Hα) absorption line. The project plots the star's spectrum, locates the Hα minimum, and reports the redshift \( z = \frac{\lambda_{Ha}}{\lambda_0} - 1 \) and speed \( v = z\,c \).
-
+This project originally comes from the MATLAB Onramp exercise using starData.mat. Since that file isn’t publicly distributed, I provide a synthetic generator (generate_demo_starData.m) so anyone can reproduce the workflow.
 - **Rest wavelength**: \( \lambda_0 = 656.28 \) nm
 - **Speed of light**: \( c = 299\,792.458 \) km/s
 
@@ -33,7 +33,7 @@ Wavelength axis is reconstructed from lambdaStart, lambdaDelta, and nObs.
 Function API
 result = analyze_redshift(lambdaStart, lambdaDelta, spectra, starCol, varargin)
 
-Required
+## Required
 
 lambdaStart (nm), lambdaDelta (nm), spectra (nObs×nStars), starCol (column index)
 
@@ -51,7 +51,7 @@ Returns result struct with fields:
 
 lambda (nObs×1), s (nObs×1), sHa, idx, lambdaHa, z, speed
 
-Example
+## Example
 addpath src
 lambdaStart = 630.02; lambdaDelta = 0.14;
 load data/starData.mat % if available

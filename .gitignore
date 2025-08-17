@@ -1,0 +1,19 @@
+# MATLAB / Octave
+*.asv
+*.m~
+*.mat
+*.fig
+*.slprj/
+*.mex*
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Figures and cache (keep folder, ignore files)
+figures/*
+!figures/.gitkeep
+
+# Data (optional)
+data/*
+!data/.gitkeep
